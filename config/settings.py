@@ -85,7 +85,7 @@ DATABASES = {
         'PORT': '3306',
     }
 }
-DATABASE_OPTION = {'charset':'utf-8'}
+DATABASE_OPTION = {'charset': 'utf-8'}
 
 
 # Password validation
@@ -125,5 +125,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_files')
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
